@@ -1,0 +1,20 @@
+{
+  "name": "@wpengine/site-deploy",
+  "version": "1.0.4",
+  "private": true,
+  "engines": {
+    "node": ">=20",
+    "npm": ">=9"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2"
+  },
+  "scripts": {
+    "version": "changeset version && npm install --package-lock-only",
+    "build": "echo 'Building the application...'",
+    "start": "echo 'Starting the application...'",
+    "predeploy": "npm run build",
+    "deploy": "echo 'Deploying to wpengine...'"
+  }
+}
